@@ -7,6 +7,10 @@
 #include <THC/THC.h>
 #include <THC/THCDeviceUtils.cuh>
 
+#ifndef AT_CHECK
+#define AT_CHECK TORCH_CHECK 
+#endif
+
 #include <vector>
 #include <iostream>
 #include <cmath>
